@@ -1,0 +1,668 @@
+{
+  "schemaVersion": 3,
+  "id": "sample-person-demo-v3",
+  "revision": 0,
+  "name": "SAMPLE - Avery Example - updated demo (fictional)",
+  "type": "person",
+  "caseId": "default",
+  "subjectId": "sample-person-demo-v3-subject",
+  "entities": [
+    {
+      "id": "sample-person-demo-v3-subject",
+      "name": "Avery Example",
+      "type": "person",
+      "aliases": "",
+      "details": "Fictional research engineer; this is synthetic demonstration data.",
+      "dossierId": "sample-person-demo-v3"
+    },
+    {
+      "id": "sample-org-demo-v3-subject",
+      "name": "Northstar Demo Labs",
+      "type": "organization",
+      "aliases": "",
+      "details": "Fictional organization used to test the mapper.",
+      "dossierId": "sample-org-demo-v3"
+    },
+    {
+      "id": "sample-project",
+      "name": "Open Atlas Demo",
+      "type": "project",
+      "aliases": "",
+      "details": "Fictional open mapping project.",
+      "dossierId": ""
+    },
+    {
+      "id": "sample-account",
+      "name": "@avery-demo",
+      "type": "account",
+      "aliases": "",
+      "details": "Ownership remains a research lead.",
+      "dossierId": ""
+    },
+    {
+      "id": "sample-domain",
+      "name": "northstar.example.com",
+      "type": "domain",
+      "aliases": "",
+      "details": "Demonstration hostname.",
+      "dossierId": ""
+    },
+    {
+      "id": "sample-morgan-one",
+      "name": "Morgan Example",
+      "type": "person",
+      "aliases": "",
+      "details": "Fictional colleague in Demo City.",
+      "dossierId": ""
+    },
+    {
+      "id": "sample-morgan-two",
+      "name": "Morgan Example",
+      "type": "person",
+      "aliases": "",
+      "details": "Different fictional namesake in Another City.",
+      "dossierId": ""
+    }
+  ],
+  "assertions": [
+    {
+      "id": "sample-relationship-0",
+      "kind": "relationship",
+      "entityId": "sample-person-demo-v3-subject",
+      "label": "works at",
+      "value": "works at",
+      "category": "General",
+      "knowledge": "known",
+      "classification": "CONFIRMED",
+      "verification": "reviewed",
+      "sourceIds": [
+        "sample-source-1"
+      ],
+      "evidence": "Synthetic statement for testing this specific relationship; no real-world evidence is implied.",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2026-09",
+      "publicationDate": "",
+      "internal": false,
+      "fromId": "sample-person-demo-v3-subject",
+      "toId": "sample-org-demo-v3-subject",
+      "relationship": "works at"
+    },
+    {
+      "id": "sample-relationship-1",
+      "kind": "relationship",
+      "entityId": "sample-person-demo-v3-subject",
+      "label": "contributes to",
+      "value": "contributes to",
+      "category": "General",
+      "knowledge": "known",
+      "classification": "CORROBORATED",
+      "verification": "reviewed",
+      "sourceIds": [
+        "sample-source-2"
+      ],
+      "evidence": "Synthetic statement for testing this specific relationship; no real-world evidence is implied.",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2026-09",
+      "publicationDate": "",
+      "internal": false,
+      "fromId": "sample-person-demo-v3-subject",
+      "toId": "sample-project",
+      "relationship": "contributes to"
+    },
+    {
+      "id": "sample-relationship-2",
+      "kind": "relationship",
+      "entityId": "sample-person-demo-v3-subject",
+      "label": "possible account owner",
+      "value": "possible account owner",
+      "category": "General",
+      "knowledge": "known",
+      "classification": "POSSIBLE",
+      "verification": "unreviewed",
+      "sourceIds": [
+        "sample-source-4"
+      ],
+      "evidence": "Synthetic statement for testing this specific relationship; no real-world evidence is implied.",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2026-09",
+      "publicationDate": "",
+      "internal": false,
+      "fromId": "sample-person-demo-v3-subject",
+      "toId": "sample-account",
+      "relationship": "possible account owner"
+    },
+    {
+      "id": "sample-relationship-3",
+      "kind": "relationship",
+      "entityId": "sample-person-demo-v3-subject",
+      "label": "collaborates with",
+      "value": "collaborates with",
+      "category": "General",
+      "knowledge": "known",
+      "classification": "PROBABLE",
+      "verification": "reviewed",
+      "sourceIds": [
+        "sample-source-2"
+      ],
+      "evidence": "Synthetic statement for testing this specific relationship; no real-world evidence is implied.",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2026-09",
+      "publicationDate": "",
+      "internal": false,
+      "fromId": "sample-person-demo-v3-subject",
+      "toId": "sample-morgan-one",
+      "relationship": "collaborates with"
+    },
+    {
+      "id": "sample-relationship-4",
+      "kind": "relationship",
+      "entityId": "sample-person-demo-v3-subject",
+      "label": "mentioned alongside",
+      "value": "mentioned alongside",
+      "category": "General",
+      "knowledge": "known",
+      "classification": "UNVERIFIED",
+      "verification": "unreviewed",
+      "sourceIds": [
+        "sample-source-4"
+      ],
+      "evidence": "Synthetic statement for testing this specific relationship; no real-world evidence is implied.",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2026-09",
+      "publicationDate": "",
+      "internal": false,
+      "fromId": "sample-person-demo-v3-subject",
+      "toId": "sample-morgan-two",
+      "relationship": "mentioned alongside"
+    },
+    {
+      "id": "sample-relationship-5",
+      "kind": "relationship",
+      "entityId": "sample-person-demo-v3-subject",
+      "label": "maintains",
+      "value": "maintains",
+      "category": "General",
+      "knowledge": "known",
+      "classification": "POSSIBLE",
+      "verification": "unreviewed",
+      "sourceIds": [
+        "sample-source-3"
+      ],
+      "evidence": "Synthetic statement for testing this specific relationship; no real-world evidence is implied.",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2026-09",
+      "publicationDate": "",
+      "internal": false,
+      "fromId": "sample-person-demo-v3-subject",
+      "toId": "sample-domain",
+      "relationship": "maintains"
+    },
+    {
+      "id": "sample-role",
+      "kind": "fact",
+      "entityId": "sample-person-demo-v3-subject",
+      "label": "Current role",
+      "value": "Research engineer (fictional)",
+      "category": "General",
+      "knowledge": "known",
+      "classification": "CONFIRMED",
+      "verification": "reviewed",
+      "sourceIds": [
+        "sample-source-1"
+      ],
+      "evidence": "Synthetic staff directory lists this fictional role.",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2025",
+      "publicationDate": "",
+      "internal": false
+    },
+    {
+      "id": "sample-start",
+      "kind": "fact",
+      "entityId": "sample-person-demo-v3-subject",
+      "label": "Joined organization",
+      "value": "September 2025 (fictional)",
+      "category": "General",
+      "knowledge": "known",
+      "classification": "UNVERIFIED",
+      "verification": "reviewed",
+      "sourceIds": [
+        "sample-source-1"
+      ],
+      "evidence": "",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2025-09",
+      "publicationDate": "",
+      "internal": false
+    },
+    {
+      "id": "sample-ownership",
+      "kind": "fact",
+      "entityId": "sample-person-demo-v3-subject",
+      "label": "Account ownership",
+      "value": "",
+      "category": "General",
+      "knowledge": "not_checked",
+      "classification": "UNVERIFIED",
+      "verification": "unreviewed",
+      "sourceIds": [],
+      "evidence": "Check official cross-links before merging the account with this identity.",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2025",
+      "publicationDate": "",
+      "internal": false
+    },
+    {
+      "id": "sample-negative",
+      "kind": "fact",
+      "entityId": "sample-person-demo-v3-subject",
+      "label": "Registry sanctions entry",
+      "value": "",
+      "category": "General",
+      "knowledge": "not_found",
+      "classification": "UNVERIFIED",
+      "verification": "unreviewed",
+      "sourceIds": [
+        "sample-source-3"
+      ],
+      "evidence": "Synthetic negative search result, scoped to the fictional registry query.",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2025",
+      "publicationDate": "",
+      "internal": false
+    },
+    {
+      "id": "sample-private",
+      "kind": "fact",
+      "entityId": "sample-person-demo-v3-subject",
+      "label": "Internal lead",
+      "value": "PRIVATE_DEMO_LEAD",
+      "category": "General",
+      "knowledge": "known",
+      "classification": "UNVERIFIED",
+      "verification": "unreviewed",
+      "sourceIds": [],
+      "evidence": "",
+      "justification": "Unverified working hypothesis for testing export exclusions.",
+      "collected": "2026-10-04",
+      "eventDate": "2025",
+      "publicationDate": "",
+      "internal": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "sample-source-1",
+      "ref": "S01",
+      "title": "Fictional staff directory",
+      "publisher": "Synthetic example fixture",
+      "url": "https://example.com/demo/staff",
+      "published": "2026-09",
+      "accessed": "2026-10-04",
+      "archiveUrl": "",
+      "quality": "high",
+      "notes": "Internal demo source notes; excluded from colleague-facing exports."
+    },
+    {
+      "id": "sample-source-2",
+      "ref": "S02",
+      "title": "Fictional project page",
+      "publisher": "Synthetic example fixture",
+      "url": "https://example.com/demo/project",
+      "published": "2026-09",
+      "accessed": "2026-10-04",
+      "archiveUrl": "",
+      "quality": "high",
+      "notes": "Internal demo source notes; excluded from colleague-facing exports."
+    },
+    {
+      "id": "sample-source-3",
+      "ref": "S03",
+      "title": "Fictional organization registry",
+      "publisher": "Synthetic example fixture",
+      "url": "https://example.com/demo/registry",
+      "published": "2026-09",
+      "accessed": "2026-10-04",
+      "archiveUrl": "",
+      "quality": "high",
+      "notes": "Internal demo source notes; excluded from colleague-facing exports."
+    },
+    {
+      "id": "sample-source-4",
+      "ref": "S04",
+      "title": "Fictional account page",
+      "publisher": "Synthetic example fixture",
+      "url": "https://example.com/demo/account",
+      "published": "2026-09",
+      "accessed": "2026-10-04",
+      "archiveUrl": "",
+      "quality": "high",
+      "notes": "Internal demo source notes; excluded from colleague-facing exports."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "sample-task-1",
+      "text": "Check account ownership against the fictional official profile.",
+      "due": "",
+      "done": false
+    },
+    {
+      "id": "sample-task-2",
+      "text": "Review namesakes before merging any identities.",
+      "due": "2026-10",
+      "done": false
+    },
+    {
+      "id": "sample-task-3",
+      "text": "Capture demonstration staff record.",
+      "due": "",
+      "done": true
+    }
+  ],
+  "notes": "PRIVATE_DEMO_NOTES - this text must be absent from colleague exports.",
+  "summary": "Synthetic records demonstrate an affiliation; account ownership remains unresolved.",
+  "conclusionIds": [
+    "sample-role"
+  ],
+  "modules": [],
+  "warnings": [],
+  "legacy": {
+    "schemaVersion": 2,
+    "id": "sample-person-demo-v1",
+    "type": "person",
+    "name": "SAMPLE - Avery Example (fictional)",
+    "notes": "DEMO DATA ONLY. All people, organizations, projects, publications, and claims in this dossier are invented for testing. URLs use example.com as placeholders and are not supporting evidence. Confidence and verification levels demonstrate the controls only.\n\nTry selecting nodes and links, searching for Northstar Demo Labs, filtering sources, collapsing records, and exporting the map. The sample can be renamed, edited, moved to Trash, and restored.",
+    "templateData": {
+      "profile": [
+        {
+          "Full name": "Avery Example",
+          "Other names": "A. Example (fictional)",
+          "Country / location": "Demo City, fictional location",
+          "Current role": "Research engineer (demo)",
+          "Employer / institution": "Northstar Demo Labs",
+          "Official website": "https://example.com/demo/avery"
+        }
+      ],
+      "online": [
+        {
+          "Platform / site": "Demo staff profile",
+          "Account name": "avery.example",
+          "URL": "https://example.com/demo/staff/avery",
+          "Evidence": "S01: simulated staff page. Placeholder URL; no live evidence was collected."
+        },
+        {
+          "Platform / site": "Demo code repository",
+          "Account name": "avery-demo",
+          "URL": "https://example.com/demo/repos/avery",
+          "Evidence": "S04: simulated repository page showing a demo contributor account."
+        }
+      ],
+      "connections": [
+        {
+          "From": "Avery Example",
+          "To": "Northstar Demo Labs",
+          "Relationship": "works at",
+          "Source": "S01",
+          "Evidence": "Simulated staff page lists Avery as a research engineer.",
+          "Confidence": "CONFIRMED"
+        },
+        {
+          "From": "Avery Example",
+          "To": "Project Lantern Demo",
+          "Relationship": "leads",
+          "Source": "S02",
+          "Evidence": "Simulated project page lists Avery as technical lead.",
+          "Confidence": "CONFIRMED"
+        },
+        {
+          "From": "Northstar Demo Labs",
+          "To": "Project Lantern Demo",
+          "Relationship": "hosts",
+          "Source": "S02",
+          "Evidence": "Simulated project page names the host organization.",
+          "Confidence": "CONFIRMED"
+        },
+        {
+          "From": "Harbor Demo Foundation",
+          "To": "Project Lantern Demo",
+          "Relationship": "funds",
+          "Source": "S03",
+          "Evidence": "Simulated grant listing awards DEMO-GRANT-001 to the project.",
+          "Confidence": "CORROBORATED"
+        },
+        {
+          "From": "Avery Example",
+          "To": "Jordan Demo",
+          "Relationship": "collaborates with",
+          "Source": "S02, S04",
+          "Evidence": "Simulated project and contributor pages name both fictional researchers.",
+          "Confidence": "CORROBORATED"
+        },
+        {
+          "From": "Jordan Demo",
+          "To": "Northstar Demo Labs",
+          "Relationship": "works at",
+          "Source": "S01",
+          "Evidence": "Simulated staff directory lists both fictional team members.",
+          "Confidence": "CONFIRMED"
+        }
+      ],
+      "33": [
+        {
+          "Strongest Academic Relationship": "Jordan Demo",
+          "Strongest Institutional Relationship": "Northstar Demo Labs",
+          "Primary Research Partner": "Jordan Demo",
+          "Most Frequent Coauthor": "Jordan Demo",
+          "Primary Funding Source": "Harbor Demo Foundation",
+          "Most Important Project": "Project Lantern Demo",
+          "Key Research Laboratory": "Northstar Demo Labs",
+          "Most Connected Organization": "Northstar Demo Labs",
+          "Emerging Collaborators": "Casey Demo"
+        }
+      ],
+      "34": [
+        {
+          "Research Relevance": "8",
+          "Publication Influence": "6",
+          "Project Leadership": "8",
+          "Funding Influence": "5",
+          "Network Centrality": "7",
+          "Technical Contribution": "8",
+          "Institutional Importance": "6",
+          "Reasoning": "Simulated analyst scoring for a technically active project lead. This is test data, not an assessment of a real person. The expected total is 48/70."
+        }
+      ],
+      "35": [
+        {
+          "Source": "S01",
+          "Type": "Primary",
+          "Reliability": "High",
+          "Information Obtained": "Demo role and staff affiliation; assigned high reliability for UI testing only.",
+          "Date Accessed": "2026-10-04",
+          "Archived": "No"
+        },
+        {
+          "Source": "S03",
+          "Type": "Primary",
+          "Reliability": "High",
+          "Information Obtained": "Simulated grant reference and fictional funder.",
+          "Date Accessed": "2026-10-04",
+          "Archived": "Yes"
+        },
+        {
+          "Source": "S04",
+          "Type": "Social",
+          "Reliability": "Medium",
+          "Information Obtained": "Demo account and contribution history; profile ownership requires checking.",
+          "Date Accessed": "2026-10-04",
+          "Archived": "No"
+        }
+      ],
+      "36": [
+        {
+          "Claim": "Avery Example leads Project Lantern Demo.",
+          "Source 1": "S02",
+          "Source 2": "S01",
+          "Evidence": "The simulated project page lists the lead; the staff page supports the employer link.",
+          "Confidence": "CONFIRMED"
+        },
+        {
+          "Claim": "Harbor Demo Foundation funds Project Lantern Demo.",
+          "Source 1": "S03",
+          "Source 2": "S02",
+          "Evidence": "Two simulated source records describe the same fictional grant.",
+          "Confidence": "CORROBORATED"
+        },
+        {
+          "Claim": "Avery Example owns the avery-demo repository account.",
+          "Source 1": "S04",
+          "Evidence": "Similar names alone are insufficient; a direct profile link has not been established in this test scenario.",
+          "Confidence": "POSSIBLE"
+        }
+      ],
+      "38": [
+        {
+          "Unknown Information": "Whether the demo repository account is linked from the staff profile.",
+          "Missing Evidence": "An explicit account-ownership statement in a primary source.",
+          "Claims Requiring Verification": "Repository account ownership.",
+          "Unresolved Identity Questions": "Do not merge similarly named accounts without supporting evidence.",
+          "Missing Project Information": "Next fictional project milestone.",
+          "Unknown Collaborators": "Casey Demo's role is not yet specified.",
+          "Unknown Funding": "Whether the demo grant has been renewed.",
+          "Future Research Required": "Check source links, compare publication dates, and document any contradictions."
+        }
+      ],
+      "39": [
+        {
+          "Research Project": "Project Lantern Demo",
+          "Person": "Casey Demo",
+          "Organization": "Northstar Demo Labs",
+          "Publication": "Lantern Methods: a fictional demonstration paper",
+          "Grant": "DEMO-GRANT-001",
+          "Repository": "https://example.com/demo/repos/lantern",
+          "Dataset": "Lantern Demo Dataset"
+        },
+        {
+          "Archived Website": "https://example.com/demo/archive/project-lantern",
+          "Conference": "Demo Research Forum 2026",
+          "Person": "Jordan Demo"
+        }
+      ],
+      "40": [
+        {
+          "Key Finding": "The demo subject, employer, project, and funder form a connected research network.",
+          "Evidence": "S01, S02, S03 and the six manually recorded Connections entries.",
+          "Assessment": "This example exercises shared graph nodes and connections between third parties.",
+          "Confidence": "CORROBORATED"
+        },
+        {
+          "Key Finding": "The code account remains an unresolved lead.",
+          "Evidence": "S04 has no direct ownership confirmation.",
+          "Assessment": "Keep this claim separate from confirmed affiliations.",
+          "Confidence": "POSSIBLE"
+        }
+      ],
+      "41": [
+        {
+          "Subject's Primary Area of Expertise": "Demo data engineering and research tooling",
+          "Current Research Direction": "Project Lantern Demo",
+          "Most Important Project": "Project Lantern Demo",
+          "Most Important Collaborators": "Jordan Demo",
+          "Primary Institutional Relationships": "Northstar Demo Labs; Harbor Demo Foundation",
+          "Research Influence": "Simulated project-level contribution only.",
+          "Strategic Importance to Investigation Topic": "Demonstrates an end-to-end dossier and relationship map.",
+          "Evidence Quality": "Entirely synthetic. Placeholder source URLs must not be treated as real evidence.",
+          "Overall Confidence": "CORROBORATED"
+        }
+      ],
+      "42": [
+        {
+          "Source ID": "S01",
+          "Title": "Demo staff directory",
+          "Publisher": "Northstar Demo Labs (fictional)",
+          "URL": "https://example.com/demo/staff",
+          "Date": "2026-09-12",
+          "Date Accessed": "2026-10-04"
+        },
+        {
+          "Source ID": "S02",
+          "Title": "Project Lantern Demo overview",
+          "Publisher": "Northstar Demo Labs (fictional)",
+          "URL": "https://example.com/demo/project-lantern",
+          "Date": "2026-09-20",
+          "Date Accessed": "2026-10-04"
+        },
+        {
+          "Source ID": "S03",
+          "Title": "Demo grant award",
+          "Publisher": "Harbor Demo Foundation (fictional)",
+          "URL": "https://example.com/demo/grants/001",
+          "Date": "2026-08-10",
+          "Date Accessed": "2026-10-04",
+          "Archive URL": "https://example.com/demo/archive/grants/001"
+        },
+        {
+          "Source ID": "S04",
+          "Title": "Demo contributor profile",
+          "Publisher": "Demo repository platform (fictional)",
+          "URL": "https://example.com/demo/repos/avery",
+          "Date": "2026-09-29",
+          "Date Accessed": "2026-10-04"
+        }
+      ],
+      "43": [
+        {
+          "Hypotheses": "The repository account may belong to the demo subject, but the evidence is incomplete.",
+          "Observations": "Multiple recorded connections share the same employer and project nodes.",
+          "Potential Leads": "Casey Demo; project milestone announcement.",
+          "Contradictions": "No simulated contradictions recorded yet.",
+          "Questions": "Can an official profile establish account ownership?",
+          "Follow-up Tasks": "Test graph search, source filtering, link details, HTML export, and dossier restoration."
+        }
+      ]
+    },
+    "findings": [
+      {
+        "category": "Employment",
+        "label": "Role announcement",
+        "value": "Research engineer at Northstar Demo Labs",
+        "source": "https://example.com/demo/staff/avery",
+        "collected": "2026-10-02",
+        "confidence": "high",
+        "status": "verified",
+        "notes": "Synthetic verified finding for testing. See S01."
+      },
+      {
+        "category": "Social profiles",
+        "label": "Possible code account",
+        "value": "avery-demo",
+        "source": "https://example.com/demo/repos/avery",
+        "collected": "2026-10-03",
+        "confidence": "low",
+        "status": "unverified",
+        "notes": "Synthetic lead. Account ownership remains unverified in this scenario."
+      },
+      {
+        "category": "Associations",
+        "label": "Potential collaboration",
+        "value": "Casey Demo may join Project Lantern Demo",
+        "source": "https://example.com/demo/forum",
+        "collected": "2026-10-04",
+        "confidence": "medium",
+        "status": "hypothesis",
+        "notes": "Synthetic hypothesis for testing; seek direct evidence before upgrading its status."
+      }
+    ]
+  }
+}

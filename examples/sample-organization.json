@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 3,
+  "id": "sample-org-demo-v3",
+  "revision": 0,
+  "name": "SAMPLE - Northstar Demo Labs (fictional)",
+  "type": "organization",
+  "caseId": "default",
+  "subjectId": "sample-org-demo-v3-subject",
+  "entities": [
+    {
+      "id": "sample-person-demo-v3-subject",
+      "name": "Avery Example",
+      "type": "person",
+      "aliases": "",
+      "details": "Fictional research engineer; this is synthetic demonstration data.",
+      "dossierId": "sample-person-demo-v3"
+    },
+    {
+      "id": "sample-org-demo-v3-subject",
+      "name": "Northstar Demo Labs",
+      "type": "organization",
+      "aliases": "",
+      "details": "Fictional organization used to test the mapper.",
+      "dossierId": "sample-org-demo-v3"
+    },
+    {
+      "id": "sample-project",
+      "name": "Open Atlas Demo",
+      "type": "project",
+      "aliases": "",
+      "details": "Fictional open mapping project.",
+      "dossierId": ""
+    },
+    {
+      "id": "sample-domain",
+      "name": "northstar.example.com",
+      "type": "domain",
+      "aliases": "",
+      "details": "Demonstration hostname.",
+      "dossierId": ""
+    }
+  ],
+  "assertions": [
+    {
+      "id": "sample-org-purpose",
+      "kind": "fact",
+      "entityId": "sample-org-demo-v3-subject",
+      "label": "Mission",
+      "value": "Fictional geospatial research",
+      "category": "General",
+      "knowledge": "known",
+      "classification": "UNVERIFIED",
+      "verification": "reviewed",
+      "sourceIds": [
+        "sample-source-3"
+      ],
+      "evidence": "",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2025",
+      "publicationDate": "",
+      "internal": false
+    },
+    {
+      "id": "sample-org-project",
+      "kind": "relationship",
+      "entityId": "sample-org-demo-v3-subject",
+      "label": "runs project",
+      "value": "runs project",
+      "category": "General",
+      "knowledge": "known",
+      "classification": "PROBABLE",
+      "verification": "reviewed",
+      "sourceIds": [
+        "sample-source-2"
+      ],
+      "evidence": "",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2025",
+      "publicationDate": "",
+      "internal": false,
+      "fromId": "sample-org-demo-v3-subject",
+      "toId": "sample-project",
+      "relationship": "runs project"
+    },
+    {
+      "id": "sample-org-owner",
+      "kind": "fact",
+      "entityId": "sample-org-demo-v3-subject",
+      "label": "Beneficial owner",
+      "value": "",
+      "category": "Ownership",
+      "knowledge": "not_checked",
+      "classification": "UNVERIFIED",
+      "verification": "unreviewed",
+      "sourceIds": [],
+      "evidence": "",
+      "justification": "",
+      "collected": "2026-10-04",
+      "eventDate": "2025",
+      "publicationDate": "",
+      "internal": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "sample-source-3",
+      "ref": "S03",
+      "title": "Fictional organization registry",
+      "publisher": "Synthetic example fixture",
+      "url": "https://example.com/demo/registry",
+      "published": "2026-09",
+      "accessed": "2026-10-04",
+      "archiveUrl": "",
+      "quality": "high",
+      "notes": "Internal demo source notes; excluded from colleague-facing exports."
+    },
+    {
+      "id": "sample-source-2",
+      "ref": "S02",
+      "title": "Fictional project page",
+      "publisher": "Synthetic example fixture",
+      "url": "https://example.com/demo/project",
+      "published": "2026-09",
+      "accessed": "2026-10-04",
+      "archiveUrl": "",
+      "quality": "high",
+      "notes": "Internal demo source notes; excluded from colleague-facing exports."
+    }
+  ],
+  "tasks": [
+    {
+      "id": "sample-org-next",
+      "text": "Review ownership in the fictional registry.",
+      "due": "",
+      "done": false
+    }
+  ],
+  "notes": "",
+  "summary": "",
+  "conclusionIds": [],
+  "modules": [
+    "Ownership"
+  ],
+  "warnings": [],
+  "legacy": {}
+}

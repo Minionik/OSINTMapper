@@ -1,0 +1,51 @@
+OSINT MAPPER — TYPESCRIPT / INVESTIGATION FOLIO RELEASE
+
+Application change
+- Replaced the Python server, SQLite storage, validators, import migration and
+  launcher controller with TypeScript running on Node.js 24 or newer.
+- Converted the browser controller, relationship graph, fixtures and regression
+  checks to TypeScript. Shared types define dossiers, sources, identities,
+  assertions, cases, history, templates and workspace backups.
+- Formatted the maintained source and added reproducible typecheck/build commands.
+- Retained SQLite compatibility, the local loopback address and existing API
+  contracts. Generated JavaScript is confined to build output and offline exports.
+- Retained the original person and organization research prompts.
+
+Design change
+- Investigation Folio theme: deep ink, warm paper, muted green and copper.
+- Distinctive subject cover, editorial headings and ruled analyst notebook.
+- Clear case navigation, typed dossier marks and compact research counters.
+- Evidence cards separate assertions, assessments, citations and record actions.
+- A dark map studio with a typed identity color key and subject-centred layout.
+- Full-screen graph, editable inspectors, saved layouts, evidence context and
+  search remain available. Existing manually arranged nodes are respected.
+- Responsive phone layouts, keyboard focus, tab navigation and a skip link.
+- Ctrl+Shift+K opens Quick capture. Reduced-motion preferences are respected.
+- Assets and fonts remain local: no hosted fonts or external image dependencies.
+
+Continuity
+- Current dossiers and history are preserved without resetting IDs or revisions.
+- Autosave, protected browser drafts, three-way conflicts and entry recovery remain.
+- Shared case identities and sources, unknown states, selective offline exports,
+  encryption, Trash, history restoration and workspace recovery remain.
+- The live database and source files received recovery backups in data/backups.
+
+Use
+Open Launch OSINT Mapper.cmd, or run npm start after npm ci and npm run build.
+The app is at http://127.0.0.1:8765. Refresh an already open browser tab.
+Use Backup & recovery to stop the background server.
+Python and the old Tk launcher are no longer required.
+
+Verification
+55 automated checks passed: 23 backend/launcher checks, 12 browser-controller
+regressions and 20 desktop/mobile Chromium workflows. TypeScript checks and the
+production build also passed. All six stored dossiers, including Trash records,
+their cases and their complete history matched the pre-release snapshot exactly.
+TypeScript checks, storage and DOM regressions, and desktop/mobile Chromium
+workflows are run for this release. Screenshots were inspected and the cramped
+navigation found during that inspection was corrected. Data preservation is
+checked by comparing all dossier rows, cases and full history with the pre-release
+SQLite snapshot, followed by an integrity check.
+Other browser engines have not been verified.
+The compiled TypeScript background launcher was also smoke-tested using a
+separate test database: start, health check, and clean shutdown all succeeded.
