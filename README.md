@@ -82,18 +82,9 @@ Investigation records may contain sensitive information. Use the app only for an
 
 Delete moves a dossier to Trash, preserving recovery and history. Restore brings it back. Permanently remove explicitly deletes that live dossier, its saved history and its local drafts/layouts in this browser. It does not erase existing backups, downloaded exports or copies on other devices. Removing one dossier also does not erase assertions deliberately stored in another dossier.
 
-## Fictional examples
-
-Run `npm run sample` against the running app to add both current demonstrations. Re-running it preserves existing records and edits. Select **SAMPLE - Avery Example - updated demo (fictional)** or **SAMPLE - Northstar Demo Labs (fictional)**. They share selected identities and sources, include distinct namesakes, account/domain/project nodes, unknown states and unresolved steps. All records are synthetic; example.com addresses are placeholders.
-
-The fixtures are `examples/sample-person.json` and `examples/sample-organization.json`. The older sample is preserved in `examples/legacy-sample-person.json` and existing legacy sample records are retained. `examples/sample-relationship-map.html` is a scoped, fictional offline export.
-
 ## Verification
 
-- `npm ci` installs dependencies; `npm run typecheck` checks the TypeScript source, and `npm run build` produces the server, launcher, and browser bundles.
-- `npm test` runs backend, concurrency, migration, validation, shared-record and recovery checks using temporary databases, plus DOM regressions for save races, stale merging, drafts, graph identities/evidence, focus, large-map geometry, selective exports and encryption.
-- `npx playwright install chromium`, then `npm run test:browser` runs Chromium workflows at laptop and mobile sizes against a disposable server/database on port 8877. It covers entry, two tabs, keyboard/fullscreen controls, offline exports, import rejection, 500-node maps, long source notes, Trash, encryption/restore, and case/preset reuse. Screenshots and failure traces are written to `test-results/`.
-- `npx tsx scripts/build-demo-export.ts` regenerates the scoped offline demonstration using the production bundles. Build first.
+- `npm ci` installs the dependencies; `npm run typecheck` checks the TypeScript source, and `npm run build` produces the server, launcher, and browser bundles.
 - `npx tsx scripts/verify-install.ts <backup-path>` compares all dossiers, cases and saved history with a SQLite backup and checks integrity without writing.
 
 ## Troubleshooting
@@ -104,4 +95,4 @@ The fixtures are `examples/sample-person.json` and `examples/sample-organization
 - **The port is already in use:** stop the other local service or set `PORT` to an available port before starting OSINT Mapper.
 - **Records are not where expected:** check the database path shown in **Backup & recovery**. A custom `OSINT_MAPPER_DB` path uses a different database from the default `data/mapper.sqlite3`.
 
-The original review is `OSINT-mapper-analyst-review.txt`. The historical implementation checklist is `OSINT-mapper-review-fixes.txt`; version 4 carries those workflows into TypeScript. Desktop and mobile screenshots of the design are in `docs/previews/`. Automated browser checks cover Chromium; other browser engines have not been verified.
+Run `npm run format` to format the TypeScript source, scripts, static assets, and root JSON configuration files.
